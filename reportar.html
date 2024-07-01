@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar - MARES AZUIS</title>
+    <link rel="stylesheet" href="css/estiloREPORTAR.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <img src="imagem/logo.png" alt="marés-azuis" id="imagem">
+            <a href="integrantes.html"><h2 class="header-text">INTEGRANTES</h2></a>
+            <a href="index.html"><h2 class="header-text">SOBRE</h2></a>
+            <a href="reportar.html"><h2 class="header-text">REPORTAR</h2></a>
+        </div>
+    </header>
+
+    <main>
+        <div id="container-text">
+            <p>"Só depois da última árvore derrubada, do último rio poluído, do último peixe morto, o homem<br> irá perceber que dinheiro não se come."</p>
+            <h6>~Alanis Obomsawin</h6>
+        </div>
+        <div id="container">
+            <div class="container">
+                <h3>REPORTAR POLUIÇÃO</h3>
+                <form id="formaDeReporta">
+                    <label for="localizacao">Localização:</label>
+                    <input type="text" id="localizacao" name="localizacao" required>
+                    
+                    <label for="tipoPoluicao">Tipo de Poluição:</label>
+                    <select id="tipoPoluicao" name="tipoPoluicao" required>
+                        <option value="">Selecione...</option>
+                        <option value="oleo">Óleo</option>
+                        <option value="lixo">Lixo</option>
+                        <option value="quimicos">Químicos</option>
+                        <option value="outros">Outro</option>
+                    </select>
+                    
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar Relatório</button>
+                </form>
+                <div id="respostaMensagem"></div>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
